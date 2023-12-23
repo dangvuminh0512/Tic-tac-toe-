@@ -1,0 +1,135 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color and center the content vertically */
+  body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the menu */
+  .menu {
+    text-align: center;
+  }
+  
+  .game-name {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+  }
+  
+  .start-game {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to the start button */
+  .start-game:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the second menu */
+  .menu2 {
+    text-align: center;
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .two-player,
+  .single-player {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to the menu buttons */
+  .two-player:hover,
+  .single-player:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the game board */
+  .game {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to the cells */
+  .cell:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the game status text */
+  #status-text {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #007bff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the buttons */
+  #go-back,
+  #restart {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Add hover effect to the buttons */
+  #go-back:hover,
+  #restart:hover {
+    background-color: #0056b3;
+  }
+  
